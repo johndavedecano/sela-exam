@@ -1,4 +1,9 @@
+// external imports
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700');
+
+// internal imports
 @import "variables";
+@import "bootstrap";
 @import "base";
 @import "mixins";
-@import "bootstrap";

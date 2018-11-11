@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
 
 import { AuthConsumer } from './../contexts/auth-context'
+import { PublicLayout } from './../components'
 
 const RedirectComponent = ({ to = '/404' }) => <Redirect to={to} />
 
@@ -41,13 +42,15 @@ const PreventAuthRoute = route => {
       {({ isAuth }) => (
         <Route
           path={route.path}
-          render={props =>
-            isAuth === false ? (
-              <route.component {...props} routes={route.routes} />
-            ) : (
-              <RedirectComponent to="/" />
-            )
-          }
+          render={props => (
+            <PublicLayout>
+              {isAuth === false ? (
+                <route.component {...props} routes={route.routes} />
+              ) : (
+                <RedirectComponent to="/" />
+              )}
+            </PublicLayout>
+          )}
         />
       )}
     </AuthConsumer>

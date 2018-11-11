@@ -1,1 +1,13 @@
+// _bootstrap.scss
 @import "~bootstrap/scss/bootstrap.scss";
+
+
+$font-family-base: 'Open Sans', sans-serif;
+
+$theme-colors: (
+  "primary": $custom-primary,
+  "danger": $custom-secondary,
+  "warning": $custom-warning,
+  "success": $custom-success,
+  "secondary": $custom-secondary
+);

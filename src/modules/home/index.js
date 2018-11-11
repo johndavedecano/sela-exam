@@ -1,10 +1,15 @@
-import React, { Component } from 'react'
-// import PropTypes from 'prop-types'
+import React, { Component, Fragment } from 'react'
+
+import Header from './components/Header'
 
 class Home extends Component {
   state = {}
   render() {
-    return <div>home</div>
+    return (
+      <Fragment>
+        <Header />
+      </Fragment>
+    )
   }
 }
 
