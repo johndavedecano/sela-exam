@@ -5,14 +5,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faEnvelope,
   faKey,
-  faAngleDown
+  faAngleDown,
+  faMapMarkerAlt
 } from '@fortawesome/free-solid-svg-icons'
 
 import { AuthProvider } from './contexts/auth-context'
 
 import Routes from './modules'
 
-library.add(faEnvelope, faKey, faAngleDown)
+library.add(faEnvelope, faKey, faAngleDown, faMapMarkerAlt)
 
 class App extends Component {
   render() {

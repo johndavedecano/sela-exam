@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react'
 
 import Header from './components/Header'
+import SearchBar from './components/SearchBar'
 
 class Home extends Component {
   state = {}
@@ -8,6 +9,7 @@ class Home extends Component {
     return (
       <Fragment>
         <Header />
+        <SearchBar />
       </Fragment>
     )
   }
